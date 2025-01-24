@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    text-shadow:0 0 15px black;
+}
+body{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-bar{
+    width:700px;
+    height:80px;
+    /* border: 2px solid rgba(0, 0, 0, 0.433); */
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    display: flex;
+    position: fixed;
+    left:420px;
+    top:10px;
+    /* justify-content:space-evenly; */
+    gap:60px;
+    z-index: 11; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.5s;
+}
+
+.nav-bar:hover{
+    transform: scale(1.1);
+}
+
+.nav-bar h1{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left:85px;
+    top:19px;
+    transition: transform 0.6s;
+    /* text-shadow:0 0 15px rgb(219, 212, 212); */
+}
+
+.nav-bar h1:hover{
+    transform: scale(1.1);
+    color: rgb(178, 173, 173);
+}
+a{
+    text-decoration: none;
+}
+
+#logo{
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+#logo img{
+    position: relative;
+    left:3px;
+    top:5px;
+    width:270px;
+}
+
+#logo p{
+    display: inline;
+    font-size: 50px;
+    left:px;
+}
+
+#cart{
+    width:200px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.304);
+    border-radius: 40px;
+    position: absolute;
+    top:18px;
+    right:130px;
+    transition: transform 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#cart p{
+    position: absolute;
+    top:15px;
+    left:45px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+    transition: transform 0.5s;
+    text-shadow: none;
+}
+#cart:hover{
+    border-color: black;
+    transform: scale(1.1);
+    background-color: rgba(128, 128, 128, 0.032);
+}
+#cart:active{
+    border:1px solid black;
+    background-color: rgba(128, 128, 128, 0.534);
+}
+
+#home-page-pic{
+    width:320px;
+    position: absolute;
+    top:200px;
+    left:590px;
+    transition:transform 0.5s;
+    mix-blend-mode: multiply;
+}
+
+#home-page-pic:hover{
+    transform: scale(1.2);
+}
+
+/* #animation{
+    font-size: 20px;
+    position: absolute;
+    top:380px;
+    left:420px;
+    rotate: -90deg;
+    animation: loop 5s 0.5s infinite linear;
+}
+@keyframes loop{
+    0%{
+        transform: translate(0,0);
+        rotate: -90deg;
+    }
+    10%{
+        transform: translate(-200px,0);
+        rotate: -90deg;
+    }
+    20%{
+        transform: translate(-500px,0);
+        rotate: -90deg;
+    }
+} */
+
+#animation p{
+    margin:0;
+    white-space: nowrap;
+}
+
+#animation{
+    white-space: nowrap; 
+    padding-left: 100%; 
+    font-size: 20px;
+    position: absolute;
+    top:130px;
+    left:420px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    animation: loop 260s infinite linear;
+    overflow: hidden;
+}
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+#welcome-msg{
+    position: absolute;
+    top:550px;
+    left:430px;
+}
+#welcome-msg2{
+    position: absolute;
+    top:600px;
+    left:520px;
+}
+
+.container-home{
+    width:260px;
+    height: 390px;
+    position: absolute;
+    top:230px;
+    left:100px;
+    display:inline-block;
+    text-align: center;
+}
+.container-home p{
+    position: inherit;
+    top:120px
+}
+.container-home h3{
+    position: inherit;
+    top:80px;
+    left:25px;
+}
+#container-home-image{
+    width:270px;
+    z-index:10;
+    position: absolute;
+    top:200px;
+    left:-5px;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s;
+}
+
+#container-home-image2{
+    width:270px;
+    z-index:10;
+    position: absolute;
+    top:5px;
+    left:-4px;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s;
+}
+
+#container-home-image:hover{
+    transform: scale(1.2);
+}
+
+#container-home-image2:hover{
+    transform: scale(1.2);
+}
+
+.container-home, .container-home2,.container-home3,.container-home4{
+    background-color: rgba(128, 128, 128, 0.534);
+    border: 5px solid rgba(0, 0, 0, 0.704);
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.container-home2{
+    position: absolute;
+    width:330px;
+    height:100px;
+    top:230px;
+    right: 70px;
+    display:inline-block;
+    text-align: center;
+}
+.container-home2 p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#container-home2-img{
+    width:100px;
+    z-index:10;
+    position: absolute;
+    top:26px;
+    left:270px;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s;
+}
+#container-home2-img2{
+    width:100px;
+    position: absolute;
+    top:-47px;
+    left:-45px;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s;
+}
+
+#container-home2-img:hover,#container-home2-img2:hover{
+    transform: scale(1.2);
+}
+
+.container-home3{
+    position: absolute;
+    width:150px;
+    height:260px;
+    top:365px;
+    right: 250px;
+}
+.container-home3 h3{
+    padding:10px;
+    position: inherit;
+    left:15px;
+}
+.container-home3 p{
+    padding:3px;
+    position: inherit;
+    top:40px;
+    left:10px;
+}
+
+.container-home4{
+    position: absolute;
+    width:150px;
+    height:260px;
+    top:365px;
+    right: 75px;
+    text-align: center;
+}
+.container-home4 p{
+    position: inherit;
+    top:70px;
+    padding: 5px;
+}
+.container-home4 h3{
+    position: inherit;
+    top:10px;
+}
+
+.container-home:hover, .container-home2:hover,.container-home3:hover,.container-home4:hover{
+    transform: scale(1.1);
+}
+
+/* .footer{
+    width:100%;
+    height:100px;
+    background-color: black;
+    position: fixed;       /* Sticks to the bottom of the page */
+    /* bottom: 0;         /* Full width */
+    /* z-index: 0;         /* Ensures it's above other elements */
+    /* border-top: 1px solid #333; */ 
+/* }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height for the page */
+/* } */
+
+/* .content {
+    min-height: calc(100vh - 40px); /* Leaves space for the footer */
+    /* display: flex;
+    flex-direction: column;
+}  */

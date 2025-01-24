@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Figma basics.png">
+    <title>LIKACUBI - Home</title>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <div class="nav-bar">
+                <a href="./index.html"><h1>🏠︎ Home</h1></a>
+                <a href="./about us.html"><h1>➯ About Us</h1></a>
+                <a href="./products.html"><h1>Products ✧</h1></a>
+                </div>
+            <div id="logo">
+                <p>✦</p> <img src="https://see.fontimg.com/api/rf5/E4GV4/N2JiNjQyNTRiNGIzNGJjY2I0YzgyNDQ0ODM1ZWM3MDMudHRm/TElLQUNVQkk/demonatsu.png?r=fs&h=81&w=1250&fg=000000&bg=FFFFFF&tb=1&s=65" alt="LIKACUBI"> <p>   ✦</p>
+            </div>
+            <div id="cart"><p>Your Cart 🛒</p></div>
+        </nav>
+        <img src="https://i.pinimg.com/736x/2a/8d/56/2a8d56a0e8a78be1a0ddd70b38321830.jpg" id="home-page-pic">
+        <div id="animation"> 
+            <p>• Welcome to our clothing store </p>   
+            <p>•</p>      
+            <p> welcome to our clothing store </p>   
+        </div>
+        <h3 id="welcome-msg">welcome to the coolest y2k & acubi clothing designer store LIKACUBI</h3>
+        <h3 id="welcome-msg2">learn more about us and check out our products</h3>
+        <div class="container-home">
+            <img src="./images/deco2.jpg" id="container-home-image2">
+            <h3>Welcome to LIKACUBI</h3>
+            <p>Your style, redefined. At LIKACUBI, we bring you timeless pieces and bold trends that let your personality shine. Whether you're dressing for comfort, confidence, or creativity, we’ve got you covered.</p>
+            <img src="./images/deco1.jpg" id="container-home-image">
+        </div>
+        
+        <div class="container-home2">
+            <img src="./images/deco3.jpg" id="container-home2-img2">
+            <img src="./images/deco3.jpg" id="container-home2-img">
+            <h3>Our Mission</h3>
+            <p>To make fashion accessible, sustainable, and unapologetically YOU.</p>
+        </div>
+        <div class="container-home3">
+            <h3>Our Story</h3>
+            <p>LIKACUBI isn’t just a brand—it’s a movement. we’re here to celebrate every unique expression of style.</p>
+        </div>
+        <div class="container-home4">
+            <h3>Shop the Latest:</h3>
+            <p> • Vibrant Winter Layers <br>
+                • Bold Graphic Tees <br>
+                • Accessories That Pop</p>
+        </div>
+    </div>
+
+
+    <script>
+        const animationContainer = document.getElementById("animation");
+        
+        const text = "• Welcome to our clothing store ";
+        const repeatCount = 200; 
+        for (let i = 0; i < repeatCount; i++) {
+            const paragraph = document.createElement("p");
+            paragraph.textContent = text;
+            animationContainer.appendChild(paragraph);
+        }
+        </script>
+</body>
+</html>
