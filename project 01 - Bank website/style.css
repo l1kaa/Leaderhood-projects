@@ -1,0 +1,260 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body{
+    background-color: rgb(17, 0, 28);
+    min-height: 100%;
+    width:100%;
+}
+h1{
+    color:ivory;
+    font-family: arial;
+}
+.nav-bar{
+    width:1537px;
+    height:80px;
+    background: rgba(58, 1, 92);
+    display: flex;
+    position: fixed;
+    top:0;
+    /* justify-content:space-evenly; */
+    gap:100px;
+    z-index: 11;
+}
+a{
+    text-decoration: none;
+    color:ivory;
+    font-size: x-large;
+    position: relative;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    position: relative;
+    left:170px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 12;
+}
+
+
+#money-tree{
+    position: relative;
+    left:20px;
+    gap:100px;
+}
+#main-logo{
+    position: relative;
+    top:13px;
+    
+}
+#contact-img{
+    position: relative;
+    top:7px;
+}
+#home-img, #login-img, #signup-img{
+    position: relative;
+    top:5px;
+}
+#home:hover,#login:hover,#signup:hover,#contact:hover{
+    opacity: 0.4;
+    transition: opacity 0.7s;
+    text-shadow: 0 0 15px black;
+    /* background-color: rgba(242, 245, 248, 0.14);
+    transition: 0.7s; */
+}
+
+#money-tree:hover{
+    background-attachment: fixed;
+    background-color: rgba(242, 245, 248, 0.14);
+    transition: 0.7s;
+    text-shadow: 0 0 15px black;
+    border-radius: 10px;
+
+}
+.user p{
+    color:ivory;
+    font-size:15px;
+}
+.user{
+    position: fixed;
+    left:1380px;
+    top:2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.user:hover{
+    background-attachment: fixed;
+    background-color: rgba(242, 245, 248, 0.14);
+    transition: 0.7s;
+    text-shadow: 0 0 15px black;
+    border-radius: 5px;
+}
+.user img{
+    position: relative;
+    left:15px;
+}
+video{
+    position: absolute;
+    left:29%;
+    top:0%;
+    width:700px;
+    height:700px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+footer{
+    height:150px;
+    background: rgb(90, 16, 143);
+    display: flex;
+    position:relative;
+    top:600px;
+    /* margin-top: -200px; */
+    color:ivory;
+    font-family: arial;
+    z-index: 2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+
+}
+
+
+
+footer h3{
+    position: relative;
+    left:230px;
+    top:10px;
+}
+footer p{
+    position: relative;
+    left:70px;
+    top:50px;
+    text-align: center;
+}
+
+.personal h3{
+    position: relative;
+    top:12px;
+}
+.personal p{
+    position: relative;
+    left:205px;
+    top:25px;
+}
+.buisness h3{
+    position: relative;
+    left:350px;
+    top:12px;
+}
+.buisness p{
+    position: relative;
+    top:25px;
+    left:340px;
+}
+.newsletter h2{
+    position: relative;
+    left:600px;
+    top:11px;
+}
+.newsletter label{
+    position: relative;
+    display: flex;
+    left:510px;
+    top:20px;
+    text-align: center;
+}
+form{
+    position: relative;
+    left:540px;
+    top:35px;
+    border-collapse: collapse;
+    
+}
+
+input{
+    width:170px;
+    height:25px;
+    border-collapse: collapse;
+    padding:5px;
+    border-radius: 5px;
+}
+.newsletter button{
+    height:35px;
+    width:80px;
+    transition-duration: 0.4s;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+.newsletter button:hover {
+    background-color: rgb(129, 90, 192); 
+    color: white;
+}
+input:focus{
+    background-color: rgb(129, 90, 192); 
+    color: white;
+}
+
+
+
+footer label:hover, .footer p:hover{
+    text-decoration: underline white;
+}
+footer label:hover, .footer p{
+    transition-duration: 0.4;
+}
+
+.sec1{
+    width:300px;
+    height: 350px;
+    background-color: rgb(129, 90, 192);
+    position: absolute;
+    top:175px;
+    left:80px;
+    border:5px solid rgb(76, 2, 119);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+
+.sec2{
+    width:300px;
+    height: 250px;
+    background-color: rgb(129, 90, 192);
+    position: absolute;
+    top:175px;
+    right:20px;
+    border:5px solid rgb(76, 2, 119);
+    border-radius: 5px;
+}
+
+.sec1 p{
+    font-size:20px;
+    display: flex;
+    color:rgb(229, 204, 251);
+}
+
+#main-logo2{
+    position: absolute;
+    top:5px;
+    padding:10px;
+    left:90px;
+}
+
+#h22{
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: aliceblue;
+    font-family: arial;
+    position: absolute;
+    top:120px;
+    left:80px;
+}

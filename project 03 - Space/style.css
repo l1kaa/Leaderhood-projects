@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 3, 31);
+}
+
+.nav-bar #main-logo{
+    font-family: 'Orbitron';
+    font-size: 35px;
+    color: aliceblue;
+    position: absolute;
+    margin:px;
+    
+}
