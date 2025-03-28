@@ -37,9 +37,9 @@ html{
 
 body{
     background: rgb(11,25,34);
-    background: linear-gradient(0deg, rgba(11,25,34,1) 0%, rgba(66,84,98,1) 35%, rgba(198,202,204,1) 100%);
+    background: radial-gradient(circle, rgba(11,25,34,1) 0%, rgba(66,84,98,1) 27%, rgba(198,202,204,1) 100%);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 100vh; 
     /* width:100%; */
     margin: 0;
@@ -51,19 +51,21 @@ body{
 #nav-bar{
     width:50%;
     height:80px;
-    background: rgba(73, 90, 106, 0.636);
+    background: rgba(117, 129, 139, 0.293);
     position: fixed;
     top:20px;
     left:25%;
     display: flex;
     align-self: center;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
 }
 
 #nav-guitar{
     position: relative;
     left:10px;
-    width:11%;
+    width:10%;
 }
 
 #nav-name{
@@ -103,14 +105,13 @@ body{
     align-items: center;
     gap: 40px;
     position: relative;
-    left:60px;
-
+    left:100px;
 }
 
 #cart{
     position:relative;
     top:20px;
-    left:120px;
+    left:200px;
     width:45px;
     height:40px
 }
@@ -119,7 +120,7 @@ body{
     transition: 0.6s;
 }
 
-#nav-home:hover,#nav-products:hover,#nav-contact:hover{
+#nav-home:hover,#nav-products:hover, #nav-contact:hover{
     transform: scale(1.3);
     color:rgb(37, 55, 69);
     letter-spacing: 2px;
@@ -137,6 +138,412 @@ body{
     height: auto;
     width:380px;
     position: relative;
-    top:120px;
-    right:150px;
+    top:135px;
+    right:350px;
+    transition: 1s;
+}
+
+#h1-1{
+    position: absolute;
+    top:40%;
+    left:25%;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#p1{
+    position: absolute;
+    top:50%;
+    left:25%;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#div1, #div2{
+    background: rgba(34, 61, 80, 0.197);
+    width: 35%;
+    height: 65%;
+    border-radius: 10px;
+    transition: 0.5s ;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: absolute;
+    top:900px;
+    display:flex;
+    align-items: start;
+}
+
+#div1{
+    left:150px;
+}
+
+
+#div2{
+    left:800px;
+}
+
+#div1:hover{
+    transform: scale(1.1);
+}
+
+#div2:hover{
+    transform: scale(1.1);
+}
+
+#div1 img{
+    width:60%;
+    transition: 0.5s ;
+    align-items: start;
+}
+
+#div1 img:hover{
+    transform: scale(1.1);
+}
+
+#div2 img{
+    width:45%;
+    transition: 0.5s ;
+    position: relative;
+    top:25%;
+}
+
+#div2 img:hover{
+    transform: scale(1.1);
+}
+
+#div1 h1{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    letter-spacing: 2px;
+    top:25%;
+    right:10%;
+}
+
+#div1 p{
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top:50%;
+    right:10%;
+    font-size: 120%;
+    width:100%;
+}
+
+
+.products img{
+    width:300px;
+}
+
+.product1:hover,.product2:hover,.product3:hover,.product4:hover,.product5:hover,.product6:hover,.product7:hover,.product8:hover,.product9:hover{
+    transform: scale(1.1);
+}
+
+
+
+.products h2{
+    margin:5px;
+}
+.product1 img{
+    width:250px;
+}
+
+.product2 img{
+    width:80%;
+}
+
+.product3 img{
+    width:75%;
+}
+
+.product1 button{
+    position: relative;
+    top:5%;
+}
+.product1 h2{
+    position: relative;
+    top:5%;
+}
+.product1 p{
+    position: relative;
+    top:5%;
+}
+
+.product3 button{
+    position: relative;
+    /* top:5%; */
+}
+.product3 h2{
+    position: relative;
+    /* top:5%; */
+}
+.product3 p{
+    position: relative;
+    /* top:5%; */
+}
+
+.product4 button{
+    position: relative;
+    top:5%;
+}
+.product4 h2{
+    position: relative;
+    top:5%;
+}
+.product4 p{
+    position: relative;
+    top:5%;
+}
+
+.product6 button{
+    position: relative;
+    top:3%;
+}
+.product6 h2{
+    position: relative;
+    top:3%;
+}
+.product6 p{
+    position: relative;
+    top:3%;
+}
+
+.product7 button{
+    position: relative;
+    top:3%;
+}
+.product7 h2{
+    position: relative;
+    top:3%;
+}
+.product7 p{
+    position: relative;
+    top:3%;
+}
+
+.product8 button{
+    position: relative;
+    top:3%;
+}
+.product8 h2{
+    position: relative;
+    top:3%;
+}
+.product8 p{
+    position: relative;
+    top:3%;
+}
+
+
+.product9 button{
+    position: relative;
+    top:15%;
+}
+.product9 h2{
+    position: relative;
+    top:15%;
+}
+.product9 p{
+    position: relative;
+    top:15%;
+}
+
+.product9 img{
+    width:110%;
+    position: relative;
+    top:10%;
+}
+
+.product4 img{
+    width:65%;
+}
+
+.product5 img{
+    width:100%;
+}
+
+.product6 img{
+    width:120%;
+    position: relative;
+    right:10%;
+}
+
+.product7 img{
+    width:120%;
+    position: relative;
+    right:10%;
+}
+
+.product8 img{
+    width:75%;
+}
+
+.product9 img{
+    width:75%;
+}
+
+.product1,.product2,.product3,.product4,.product5,.product6,.product7,.product8,.product9{
+    background: rgba(109, 123, 134, 0.637);
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    height:580px;
+}
+
+.product1{
+    position: absolute;
+    top:175px;
+    left:100px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+.product2{
+    position: absolute;
+    top:175px;
+    left:580px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+
+.product3{
+    position: absolute;
+    top:175px;
+    left:1050px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product4{
+    position: absolute;
+    top:900px;
+    left:100px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product5{
+    position: absolute;
+    top:900px;
+    left:580px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product6{
+    position: absolute;
+    top:900px;
+    left:1050px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product7{
+    position: absolute;
+    top:1600px;
+    left:100px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product8{
+    position: absolute;
+    top:1600px;
+    left:580px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.product9{
+    position: absolute;
+    top:1600px;
+    left:1050px;
+    width:350px;
+    border:2px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(177, 177, 239);
+    box-shadow: rgb(0 0 0 / 0.05) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(31, 31, 63);
+    color: white;
+    box-shadow: rgb(81, 76, 93) 0px 7px 29px 0px;
+    font-weight: 500;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color:rgb(31, 31, 63);
+    color: white;
+    box-shadow: rgb(81, 76, 93) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+    font-weight: 500;
+}
+
+.products{
+    position: relative;
+    top:100%;
+    right:100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#items-count{
+    position: relative;
+    left:30%;
+    top:5%;
+    size: 120%;
+    /* font-family: "IBM Plex Serif", serif; */
+    font-weight: 500;
+    font-style: normal;
 }
