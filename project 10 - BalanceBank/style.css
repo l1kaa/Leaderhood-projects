@@ -27,7 +27,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
+    padding: 0 32px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -36,23 +36,23 @@ header{
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 #main-logo{
-    height:60%;
+    height: 30px;
 }
 
 .nav{
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 .nav a{
     color: #CBD5E0;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -64,8 +64,7 @@ header{
 }
 
 .nav img{
-    height: 30px;
-    width: 30px;
+    height: 20px;
 }
 
 .user{
@@ -83,12 +82,11 @@ header{
 }
 
 .user-img{
-    height: 35px;
-    width: 35px;
+    height: 30px;
 }
 
 .user p{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .main-content{
@@ -97,73 +95,65 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-top: 80px;
+    padding-bottom: 32px;
 }
 
 .sec1{
     text-align: center;
-    margin-bottom: 24px;
-    position: relative;
-    top:10%;
-    width: 80%;
-    max-width: 400px;
+    margin-bottom: 32px;
 }
 
 .sec1-content{
     background-color: #1E293B;
-    padding: 24px;
+    padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #main-logo-sec1{
-    height: 60px;
-    margin-bottom: 12px;
+    height: 80px;
+    margin-bottom: 16px;
 }
 
 #sec1-title{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .account-actions{
     background-color: #1E293B;
-    padding: 24px;
+    padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 90%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 500px;
 }
 
 #balance{
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 19px;
+    margin-bottom: 16px;
     font-weight: bold;
 }
 
 #form{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 12px;
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
 #form input[type="text"],
 #form select,
 #form button[type="submit"]{
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #475569;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #334155;
     color: #E0F2FE;
-    width: 100%;
 }
 
 #form button[type="submit"]{
@@ -180,34 +170,33 @@ header{
 #warning{
     color: #F87171;
     margin-top: 8px;
-    font-size: 14px;
 }
 
 footer{
     background: #1E293B;
-    padding: 24px 0;
+    padding: 32px 0;
     color: #CBD5E0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 32px;
 }
 
 .footer-content h3{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .footer-content p{
-    line-height: 1.5;
-    margin-bottom: 6px;
+    line-height: 1.6;
+    margin-bottom: 8px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -224,37 +213,35 @@ footer{
 }
 
 .newsletter h2{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .newsletter label{
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .newsletter form{
     display: flex;
-    flex-direction: column;
     gap: 8px;
 }
 
 .newsletter input[type="email"]{
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #475569;
     border-radius: 5px;
     background-color: #334155;
     color: #E0F2FE;
     flex-grow: 1;
-    width: 100%;
 }
 
 .newsletter button[type="submit"]{
     background-color: #2563EB;
     color: white;
     border: none;
-    padding: 10px 12px;
+    padding: 12px 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -264,7 +251,7 @@ footer{
     background-color: #1E40AF;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .nav-bar{
         padding: 0 32px;
     }
@@ -343,4 +330,4 @@ footer{
         flex-direction: row;
         gap: 8px;
     }
-}
+} */
