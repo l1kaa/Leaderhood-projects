@@ -180,6 +180,10 @@ body{
     left:150px;
 }
 
+#div1 p{
+    position: absolute;
+    right:40%;
+}
 
 #div2{
     left:800px;
@@ -225,18 +229,39 @@ body{
     right:10%;
 }
 
+#div2 h1{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    letter-spacing: 2px;
+    top:25%;
+    left:5%;
+}
+
 #div1 p{
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 120%;
+    width:100%;
+}
+
+#div2 p{
     font-family: "Catamaran", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     position: relative;
-    top:50%;
-    right:10%;
+    top:55%;
+    right:20%;
     font-size: 120%;
     width:100%;
 }
-
 
 .products img{
     width:300px;
@@ -546,4 +571,67 @@ button:active {
     /* font-family: "IBM Plex Serif", serif; */
     font-weight: 500;
     font-style: normal;
+}
+
+
+.footer {
+    background-color: rgb(54, 72, 86);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-nav a:hover {
+    color:rgb(125, 157, 186);
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 97%;
+    position: absolute;
+    top:520%;
 }

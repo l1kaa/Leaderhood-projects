@@ -1,0 +1,333 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F172A;
+    color: #E0F2FE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: #1E293B;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#money-tree{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-logo{
+    height: 30px;
+}
+
+.nav{
+    display: flex;
+    gap: 24px;
+}
+
+.nav a{
+    color: #CBD5E0;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover{
+    color: #64B5F6;
+}
+
+.nav img{
+    height: 20px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.user-img{
+    height: 30px;
+}
+
+.user p{
+    font-size: 14px;
+}
+
+.main-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 32px;
+}
+
+.sec1{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.sec1-content{
+    background-color: #1E293B;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-logo-sec1{
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+#sec1-title{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.account-actions{
+    background-color: #1E293B;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+#balance{
+    font-size: 19px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+#form{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#form input[type="text"],
+#form select,
+#form button[type="submit"]{
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #334155;
+    color: #E0F2FE;
+}
+
+#form button[type="submit"]{
+    background-color: #2563EB;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form button[type="submit"]:hover{
+    background-color: #1E40AF;
+}
+
+#warning{
+    color: #F87171;
+    margin-top: 8px;
+}
+
+footer{
+    background: #1E293B;
+    padding: 32px 0;
+    color: #CBD5E0;
+    font-size: 14px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.footer-content h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.footer-content p{
+    line-height: 1.6;
+    margin-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content p:hover,
+.footer-content a:hover{
+    color: #64B5F6;
+    text-decoration: underline;
+}
+
+.footer-content a{
+    color: #CBD5E0;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.newsletter h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.newsletter label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.newsletter form{
+    display: flex;
+    gap: 8px;
+}
+
+.newsletter input[type="email"]{
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 5px;
+    background-color: #334155;
+    color: #E0F2FE;
+    flex-grow: 1;
+}
+
+.newsletter button[type="submit"]{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter button[type="submit"]:hover{
+    background-color: #1E40AF;
+}
+
+/* @media (min-width: 768px) {
+    .nav-bar{
+        padding: 0 32px;
+    }
+    #money-tree{
+        font-size: 24px;
+    }
+    #main-logo{
+        height: 30px;
+    }
+    .nav{
+        gap: 24px;
+    }
+    .nav a{
+        font-size: 16px;
+    }
+    .main-content{
+        padding-top: 80px;
+        padding-bottom: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .sec1{
+        margin-bottom: 32px;
+        width: 80%;
+        max-width: 500px;
+    }
+    .sec1-content{
+        padding: 32px;
+    }
+    #main-logo-sec1{
+        height: 80px;
+        margin-bottom: 16px;
+    }
+    #sec1-title{
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .account-actions{
+        padding: 32px;
+        width: 80%;
+        max-width: 500px;
+    }
+    #balance{
+        font-size: 19px;
+        margin-bottom: 16px;
+    }
+    #form{
+        flex-direction: row;
+        gap: 8px;
+    }
+    #form input[type="text"],
+    #form select{
+        width: auto;
+        flex-grow: 1;
+    }
+    #form button[type="submit"]{
+        width: auto;
+    }
+    #warning{
+        font-size: 16px;
+    }
+    footer{
+        padding: 32px 0;
+        font-size: 14px;
+    }
+    .footer-content{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 32px;
+        padding: 0 32px;
+    }
+    .footer-content h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .newsletter form{
+        flex-direction: row;
+        gap: 8px;
+    }
+} */

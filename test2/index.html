@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <title>Money Tree </title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1 id="money-tree"><img src="./images/main-logo.png" id="main-logo"> Money Tree</h1>
+            <nav class="nav">
+                <a href="index.html" id="home"><img src="./images/home.png" " id="home-img"> Home Page</a>
+                <a href="log in.html" id="login"><img src="./images/login.png"  id="login-img"> Log in</a>
+                <a href="sign up.html" id="signup"><img src="./images/signup.png"  id="signup-img"> Sign up</a>
+                <a href="contact.html" id="contact"><img src="./images/contact.png"  id="contact-img"> Contact</a>
+            </nav>
+            <div class="user">
+                <img src="./images/user.png" alt="user"  class="user-img">
+                <p>Your Account</p>
+            </div>
+
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="sec1">
+            <div class="sec1-content">
+                <img src="./images/main-logo.png" id="main-logo-sec1">
+                <h2 id="sec1-title">Welcome to <br>Money Tree <br> banking</h2>
+            </div>
+        </section>
+        <div class="account-actions">
+            <p id="balance">Balance: 0$</p>
+            <form id="form">
+                <input type="text" placeholder="Enter Amount" name="amount">
+                <select name="operation">
+                    <option value="d">Deposit</option>
+                    <option value="w">Withdraw</option>
+                </select>
+                <button type="submit">Submit Query</button>
+            </form>
+            <p id="warning"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About us</h3>
+                <p>Money Tree is an official bank,<br>dating from the 2000s up until today. <br>
+                    The bank serves the purpose of <br>offering all kinds of services <br> to its valued customers.
+                </p>
+            </div>
+            <div class="personal">
+                <h3>Personal</h3>
+                <p>Loans</p>
+                <p>Deposits</p>
+                <p>Concept</p>
+                <p>Digital services</p>
+                <p>Money Tree Card</p>
+            </div>
+            <div class="business">
+                <h3>For business</h3>
+                <p>Payments</p>
+                <p>Financing</p>
+                <p>Trade Finance</p>
+                <p>Daily banking</p>
+                <p>Money Tree capital</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <label for="email">Want to know what we're up to?<br>
+                    Sign up for our newsletter and get the latest updates.
+                </label>
+                <form>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

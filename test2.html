@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #001f3f;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .container {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,255,0.5);
+    }
+    input, button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    input {
+      background-color: #222;
+      color: #f0f0f0;
+    }
+    button {
+      background-color: #0074D9;
+      color: white;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dark Bank</h1>
+  </header>
+  <main>
+    <div class="container" id="auth">
+      <h2>Login / Signup</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="auth.signup()">Sign Up</button>
+      <button onclick="auth.login()">Login</button>
+    </div>
+
+    <div class="container hidden" id="dashboard">
+      <h2>Welcome, <span id="user-name"></span></h2>
+      <p>Balance: $<span id="balance"></span></p>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="account.deposit()">Deposit</button>
+      <button onclick="account.withdraw()">Withdraw</button>
+      <button onclick="auth.logout()">Logout</button>
+    </div>
+  </main>
+
+  <script>
+    class BankAccount {
+      constructor(username) {
+        this.username = username;
+        this.balance = 0;
+      }
+
+      deposit(amount) {
+        if (amount > 0) {
+          this.balance += amount;
+        }
+      }
+
+      withdraw(amount) {
+        if (amount > 0 && amount <= this.balance) {
+          this.balance -= amount;
+        }
+      }
+    }
+
+    const auth = {
+      signup() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (username && password) {
+          localStorage.setItem(username, JSON.stringify({ password, balance: 0 }));
+          alert('Signup successful! You can now log in.');
+        }
+      },
+      login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const user = JSON.parse(localStorage.getItem(username));
+        if (user && user.password === password) {
+          currentAccount = new BankAccount(username);
+          currentAccount.balance = user.balance;
+          document.getElementById('auth').classList.add('hidden');
+          document.getElementById('dashboard').classList.remove('hidden');
+          document.getElementById('user-name').textContent = username;
+          document.getElementById('balance').textContent = currentAccount.balance.toFixed(2);
+        } else {
+          alert('Invalid credentials.');
+        }
+      },
+      logout() {
+        localStorage.setItem(currentAccount.username, JSON.stringify({ password: JSON.parse(localStorage.getItem(currentAccount.username)).password, balance: currentAccount.balance }));
+        document.getElementById('auth').classList.remove('hidden');
+        document.getElementById('dashboard').classList.add('hidden');
+      }
+    };
+
+    let currentAccount = null;
+
+    const account = {
+      deposit() {
+        const amount = parseFloat(document.getElementById('amount').value);
+        currentAccount.deposit(amount);
+        document.getElementById('balance').textContent = currentAccount.balance.toFixed(2);
+      },
+      withdraw() {
+        const amount = parseFloat(document.getElementById('amount').value);
+        currentAccount.withdraw(amount);
+        document.getElementById('balance').textContent = currentAccount.balance.toFixed(2);
+      }
+    };
+  </script>
+</body>
+</html>

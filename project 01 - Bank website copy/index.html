@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <title>Money Tree </title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1 id="money-tree"><img src="./images/main-logo.png" width="50px" id="main-logo"> Money Tree</h1>
+            <nav class="nav">
+                <a href="index.html" id="home"><img src="./images/home.png" width="30px" id="home-img"> Home Page</a>
+                <a href="log in.html" id="login"><img src="./images/login.png" width="30px" id="login-img"> Log in</a>
+                <a href="sign up.html" id="signup"><img src="./images/signup.png" width="30px" id="signup-img"> Sign up</a>
+                <a href="contact.html" id="contact"><img src="./images/contact.png" width="30px" id="contact-img"> Contact</a>
+            </nav>
+            <div class="user">
+                <img src="./images/user.png" alt="user" width="50px" class="user-img">
+                <p>Your Account</p>
+            </div>
+    
+        </div>
+    </header>
+    <main> 
+        <section class="secs">
+            <div class="sec2">
+                <img src="./images/main-logo.png" id="main-logo2">
+                <h2 id="h22">Welcome to <br>Money Tree <br> banking</h2>
+            </div>
+            
+        </section>
+        <p id="balance">Balace: 0</p>
+        <form id="form">
+            <input type="text" placeholder="Enter An Amount" name="amount">
+            <select name="operation">
+                <option value="d">Deposit</option>
+                <option value="w">Withdraw</option>
+            </select>
+            <input type="submit">
+        </form>
+        <p id="warning"></p>
+        
+    </main> 
+
+    <footer>
+        <h3>About us </h3>
+        <p>Money Tree is an official bank,<br>dating from 2000s up until today. <br>
+            the bank serves a purpose of <br>offering all kinds of service <br> to the customers.
+        </p>
+        <div class="personal">
+            <h3>Personal</h3>
+            <p>Loans</p>
+            <p>Deposits</p>
+            <p>Concept</p>
+            <p>Digital services</p>
+            <p>Money Tree Card</p>
+            
+            
+        </div>
+        <div class="buisness">
+            <h3>For buisness</h3>
+            <p>Payments</p>
+            <p>Financing</p>
+            <p>Trade Finance</p>
+            <p>Daily banking</p>
+            
+            <p>Money Tree capital</p>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <label for="email">want to know what we're up to?<br>
+                sign up for the news letter and get updates.
+            </label>
+            <form>
+                <input type="email" id="email" placeholder="Email Adress">
+                <button type="submit">subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

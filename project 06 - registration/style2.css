@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+/* .boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+   */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+/* .exo-2-<uniquifier> {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgb(31, 31, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#main-heading{
+    color: rgb(177, 177, 239);
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size:130%;
+    align-items:start;
+    position: absolute;
+    top:10px;
+    left:15px;
+    transition: 0.5s;
+}
+
+#main-sign-in{
+    color: rgb(177, 177, 239);
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size:150%;
+    align-items:start;
+    position: absolute;
+    top:1.5%;
+    right:5%;
+    transition: 0.5s;
+}
+#main-sign-in:hover{
+    color: rgb(227, 227, 255);
+}
+
+#sign-in-icon{
+    position: absolute;
+    top:1.5%;
+    /* right:140px; */
+    right: 13%;
+    width: 3%;
+}
+
+#main-heading:hover{
+    color: rgb(227, 227, 255);
+}
+
+#log-in-box{
+    background: rgb(177, 177, 239);
+    width:450px;
+    height:500px;
+    position: relative;
+    top:50px;
+    left:10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+
+}
+
+#h1-welcome{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(227, 227, 255);
+    font-size: 230%;
+    position: absolute;
+    top:40%;
+    left:30%;
+    letter-spacing: 2px;
+}
+
+#p1{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(227, 227, 255);
+    display: flex;
+    font-size: 130%;
+    width:15%;
+    text-align:center;
+    position: relative;
+    top:50px;
+    z-index: 10;
+}
+
+#h1-log-in{
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(24, 24, 49);
+    position: relative;
+    top:5%;
+}
+
+#email-input{
+    width:70%;
+    height:8%;
+    border:none;
+    background-color: rgba(143, 143, 201, 0.614);
+    position: relative;
+    left:15%;
+    top:30%;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:110%;
+    transition: 1s;
+}
+
+#email-input::placeholder, #pass-input::placeholder, #username-input::placeholder{
+    color:rgba(24, 24, 49, 0.57);
+}
+
+#email-input::placeholder:hover, #pass-input::placeholder:hover, #username-input::placeholder{
+    transform: scale(1.5);
+}
+
+
+#pass-input{
+    width:70%;
+    height:8%;
+    border:none;
+    background-color: rgba(143, 143, 201, 0.614);
+    position: relative;
+    left:15%;
+    top:40%;
+    font-size:110%;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transition: 1s;
+}
+
+#username-input{
+    width:70%;
+    height:8%;
+    border:none;
+    background-color: rgba(143, 143, 201, 0.614);
+    position: relative;
+    left:15%;
+    top:20%;
+    font-size:110%;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transition: 1s;
+}
+
+#pass-input:hover, #email-input:hover, #username-input:hover{
+    transform: scale(1.1);
+}
+
+#log-in-box button{
+    position: relative;
+    top:50%;
+    right:-35%;
+    z-index: 12;
+    padding:17px 40px;
+    border-radius: 10px;
+    cursor:pointer;
+    border:0;
+    background-color:rgb(24, 24, 49); 
+    color:rgb(227, 227, 255);    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: rgb(0 0 0 / 0.05) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size:14px;
+    transition: all 0.5s ease;
+}
+
+#log-in-box button:hover{
+    letter-spacing:3px;
+    background-color: rgb(35, 35, 54);
+    color:white;
+    box-shadow: rgb(81, 76, 93) 0px 7px 29px 0px;
+}
+
+#log-in-box button:active{
+    letter-spacing: 3px;
+    background-color:rgb(35, 35, 54);
+    color:white;
+    box-shadow:  rgb(81, 76, 93) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition:100ms;
+}
